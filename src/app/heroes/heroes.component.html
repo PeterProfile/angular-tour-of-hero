@@ -1,4 +1,4 @@
-<!--
+<h2>My Heroes</h2>
 <ul class="heroes">
   <li *ngFor="let hero of heroes" (click)="onSelect(hero)"
   [class.selected]="hero===selectedHero">
@@ -8,5 +8,3 @@
 <!--binding hero(hero detail component) and selectedHero(hero component), when selected hero changed, the hero will update-->
 <!--单向数据绑定 selectedHero -> hero -->
 <app-hero-detail [hero]="selectedHero"></app-hero-detail>
-<br>
-<button (click)="clear()">clear</button>
